@@ -1,0 +1,21 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+def analyze_data(data_file):
+    # Загрузка данных из файла
+    df = pd.read_csv(data_file)
+
+    # Выполнение анализа данных
+    # ...
+
+    # Визуализация результатов
+    plt.figure(figsize=(10, 6))
+    # ...
+
+    # Сохранение графика
+    plt.savefig("analysis_result.png")
+    plt.close()
+
+if __name__ == "__main__":
+    data_file = "data.csv"
+    analyze_data(data_file)
